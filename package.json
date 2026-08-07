@@ -1,0 +1,16 @@
+{
+  "name": "whatsapp-electronics-sales-agent",
+  "version": "1.0.0",
+  "description": "AI sales agent ya WhatsApp kwa ajili ya kuuza vifaa vya electronics",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "dotenv": "^16.4.5"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
