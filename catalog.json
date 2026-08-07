@@ -1,0 +1,56 @@
+[
+  {
+    "id": "P001",
+    "jina": "Samsung Galaxy A15",
+    "aina": "Simu",
+    "bei_tsh": 320000,
+    "specs": "6.5\" HD+, 128GB/4GB RAM, Kamera 50MP, Betri 5000mAh",
+    "stock": 12,
+    "warranty": "Miezi 12 (kiwanda)"
+  },
+  {
+    "id": "P002",
+    "jina": "Infinix Note 40",
+    "aina": "Simu",
+    "bei_tsh": 410000,
+    "specs": "6.78\" AMOLED, 256GB/8GB RAM, Kamera 108MP, Betri 5000mAh, 45W Fast Charge",
+    "stock": 8,
+    "warranty": "Miezi 12 (kiwanda)"
+  },
+  {
+    "id": "P003",
+    "jina": "HP 15 Laptop (Core i5, Gen 11)",
+    "aina": "Laptop",
+    "bei_tsh": 1250000,
+    "specs": "15.6\" FHD, 8GB RAM, 512GB SSD, Windows 11",
+    "stock": 5,
+    "warranty": "Siku 30 (duka) + kiwanda kikiwepo"
+  },
+  {
+    "id": "P004",
+    "jina": "JBL Go 3 Bluetooth Speaker",
+    "aina": "Accessories",
+    "bei_tsh": 65000,
+    "specs": "Waterproof IP67, Betri masaa 5, Bluetooth 5.1",
+    "stock": 20,
+    "warranty": "Siku 30"
+  },
+  {
+    "id": "P005",
+    "jina": "Anker PowerCore 20000mAh Power Bank",
+    "aina": "Accessories",
+    "bei_tsh": 85000,
+    "specs": "Fast Charging, Ports 2xUSB-A + 1xUSB-C",
+    "stock": 15,
+    "warranty": "Miezi 6"
+  },
+  {
+    "id": "P006",
+    "jina": "TWS Earbuds (Bluetooth 5.3)",
+    "aina": "Accessories",
+    "bei_tsh": 35000,
+    "specs": "Noise cancelling, Betri masaa 6 + case masaa 24",
+    "stock": 25,
+    "warranty": "Siku 14"
+  }
+]
