@@ -24,12 +24,22 @@ app.use(express.json());
 
 // ---------- Config (weka hizi kwenye faili la .env) ----------
 const {
-  VERIFY_TOKEN,            // token unayochagua mwenyewe, inatumika Meta webhook verification
-  WHATSAPP_TOKEN,          // permanent/temporary access token kutoka Meta App
-  WHATSAPP_PHONE_NUMBER_ID,// Phone Number ID kutoka Meta Business Suite
-  ANTHROPIC_API_KEY,       // API key yako ya Anthropic
+  VERIFY_TOKEN: RAW_VERIFY_TOKEN,
+  WHATSAPP_TOKEN: RAW_WHATSAPP_TOKEN,
+  WHATSAPP_PHONE_NUMBER_ID: RAW_PHONE_ID,
+  ANTHROPIC_API_KEY: RAW_ANTHROPIC_KEY,
   PORT = 3000,
 } = process.env;
+
+// .trim() inaondoa nafasi za ziada (spaces/newlines) zinazoweza kuongezwa
+// kwa bahati mbaya unapo-copy/paste kwenye simu - chanzo cha kawaida cha
+// hitilafu za "invalid token" hata kama token yenyewe ni sahihi.
+const VERIFY_TOKEN = (RAW_VERIFY_TOKEN || "").trim();
+const WHATSAPP_TOKEN = (RAW_WHATSAPP_TOKEN || "").trim();
+const WHATSAPP_PHONE_NUMBER_ID = (RAW_PHONE_ID || "").trim();
+const ANTHROPIC_API_KEY = (RAW_ANTHROPIC_KEY || "").trim();
+
+console.log("🔧 Env check — WHATSAPP_TOKEN urefu:", WHATSAPP_TOKEN.length, "| PHONE_ID:", WHATSAPP_PHONE_NUMBER_ID, "| ANTHROPIC_KEY urefu:", ANTHROPIC_API_KEY.length);
 
 const CATALOG_PATH = path.join(__dirname, "catalog.json");
 const CONVOS_PATH = path.join(__dirname, "conversations.json");
