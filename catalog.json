@@ -1,56 +1,102 @@
 [
   {
     "id": "P001",
-    "jina": "Samsung Galaxy A15",
-    "aina": "Simu",
-    "bei_tsh": 320000,
-    "specs": "6.5\" HD+, 128GB/4GB RAM, Kamera 50MP, Betri 5000mAh",
-    "stock": 12,
+    "jina": "TV Hisense 32\" (Full HD, Non-Smart)",
+    "aina": "TV",
+    "bei_tsh": 350000,
+    "specs": "Inchi 32, Full HD, HDMI 2, USB 1",
+    "stock": 10,
     "warranty": "Miezi 12 (kiwanda)"
   },
   {
     "id": "P002",
-    "jina": "Infinix Note 40",
-    "aina": "Simu",
-    "bei_tsh": 410000,
-    "specs": "6.78\" AMOLED, 256GB/8GB RAM, Kamera 108MP, Betri 5000mAh, 45W Fast Charge",
-    "stock": 8,
+    "jina": "TV Hisense 43\" Smart (Android)",
+    "aina": "TV",
+    "bei_tsh": 680000,
+    "specs": "Inchi 43, Full HD Smart TV, YouTube/Netflix, WiFi",
+    "stock": 6,
     "warranty": "Miezi 12 (kiwanda)"
   },
   {
     "id": "P003",
-    "jina": "HP 15 Laptop (Core i5, Gen 11)",
-    "aina": "Laptop",
-    "bei_tsh": 1250000,
-    "specs": "15.6\" FHD, 8GB RAM, 512GB SSD, Windows 11",
-    "stock": 5,
-    "warranty": "Siku 30 (duka) + kiwanda kikiwepo"
+    "jina": "Decoder ya Digital (DVB-T2)",
+    "aina": "Decoder",
+    "bei_tsh": 35000,
+    "specs": "Inasoma channel za kawaida za digital, HDMI + AV",
+    "stock": 20,
+    "warranty": "Miezi 6"
   },
   {
     "id": "P004",
-    "jina": "JBL Go 3 Bluetooth Speaker",
-    "aina": "Accessories",
-    "bei_tsh": 65000,
-    "specs": "Waterproof IP67, Betri masaa 5, Bluetooth 5.1",
-    "stock": 20,
-    "warranty": "Siku 30"
+    "jina": "Friji boss 80L (Single Door)",
+    "aina": "Friji",
+    "bei_tsh": 350000,
+    "specs": "Lita 80, Single door, Low energy consumption",
+    "stock": 8,
+    "warranty": "Miezi 12 (kiwanda)"
   },
   {
     "id": "P005",
-    "jina": "Anker PowerCore 20000mAh Power Bank",
-    "aina": "Accessories",
-    "bei_tsh": 85000,
-    "specs": "Fast Charging, Ports 2xUSB-A + 1xUSB-C",
+    "jina": "Freezer roch 200L (Chest Freezer)",
+    "aina": "Freezer",
+    "bei_tsh": 620000,
+    "specs": "Lita 200, chest type, inafaa maduka/nyumbani",
+    "stock": 5,
+    "warranty": "Miezi 12 (kiwanda)"
+  },
+  {
+    "id": "P006",
+    "jina": "Blenda pmc 1.5L",
+    "aina": "Blenda",
+    "bei_tsh": 75000,
+    "specs": "Lita 1.5, Speed 3, Motor 400W",
     "stock": 15,
     "warranty": "Miezi 6"
   },
   {
-    "id": "P006",
-    "jina": "TWS Earbuds (Bluetooth 5.3)",
-    "aina": "Accessories",
-    "bei_tsh": 35000,
-    "specs": "Noise cancelling, Betri masaa 6 + case masaa 24",
-    "stock": 25,
-    "warranty": "Siku 14"
+    "id": "P007",
+    "jina": "Oven ya Umeme pmc 45L",
+    "aina": "Oven",
+    "bei_tsh": 180000,
+    "specs": "Lita 45, Grill + Bake, Timer",
+    "stock": 7,
+    "warranty": "Miezi 6"
+  },
+  {
+    "id": "P008",
+    "jina": "Rice Cooker qudes1.8L",
+    "aina": "Rice Cooker",
+    "bei_tsh": 55000,
+    "specs": "Lita 1.8, Automatic keep-warm",
+    "stock": 12,
+    "warranty": "Miezi 6"
+  },
+  {
+    "id": "P009",
+    "jina": "Mashine ya Kufua hisense7Kg (Top Load)",
+    "aina": "Mashine ya Kufua",
+    "bei_tsh": 650000,
+    "specs": "Kilo 7, Top load, Semi/Full Automatic",
+    "stock": 4,
+    "warranty": "Miezi 12 (kiwanda)"
+  },
+  {
+    "id": "P010",
+    "jina": "Music System aiwa (Bluetooth + USB)",
+    "aina": "Music System",
+    "bei_tsh": 210000,
+    "specs": "Bluetooth, USB, FM Radio, Woofer",
+    "stock": 9,
+    "warranty": "Miezi 6"
+  },
+  {
+    "id": "P011",
+    "jina": "Water Dispenser (Hot & Cold)",
+    "aina": "Dispenser",
+    "bei_tsh": 250000,
+    "specs": "Moto na baridi, compressor cooling",
+    "stock": 10,
+    "warranty": "Miezi 6"
   }
 ]
+
