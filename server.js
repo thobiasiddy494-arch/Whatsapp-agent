@@ -87,11 +87,15 @@ app.post("/webhook", async (req, res) => {
 
     const from = message.from; // namba ya mteja
     const text = message.text?.body;
-    if (!text) return; // tunashughulikia maandishi tu kwa mfano huu
+    console.log(`📩 Ujumbe umepokelewa kutoka ${from}: "${text}"`);
+    if (!text) {
+      console.log("⚠️  Ujumbe haukuwa na maandishi (labda picha/sauti) - umepuuzwa.");
+      return;
+    }
 
     await handleIncomingMessage(from, text);
   } catch (err) {
-    console.error("Kosa la webhook:", err);
+    console.error("❌ Kosa la webhook:", err);
   }
 });
 
@@ -121,7 +125,15 @@ async function handleIncomingMessage(from, text) {
   });
 
   const data = await claudeResponse.json();
+
+  if (!claudeResponse.ok) {
+    console.error("❌ Kosa kutoka Claude API:", JSON.stringify(data));
+    await sendWhatsAppMessage(from, "Samahani, kuna hitilafu ya kiufundi kwa sasa. Jaribu tena baadaye.");
+    return;
+  }
+
   let reply = data.content?.map(b => b.text || "").join("\n").trim() || "";
+  console.log(`🤖 Claude imejibu: "${reply}"`);
 
   // ---- Tafsiri amri maalum kutoka kwa Claude ----
   let orderConfirmed = false;
@@ -164,7 +176,7 @@ async function handleIncomingMessage(from, text) {
 
 // ---------- 4. Kutuma ujumbe kurudi WhatsApp ----------
 async function sendWhatsAppMessage(to, body) {
-  await fetch(
+  const res = await fetch(
     `https://graph.facebook.com/v20.0/${WHATSAPP_PHONE_NUMBER_ID}/messages`,
     {
       method: "POST",
@@ -180,6 +192,12 @@ async function sendWhatsAppMessage(to, body) {
       }),
     }
   );
+  const result = await res.json();
+  if (!res.ok) {
+    console.error(`❌ WhatsApp imekataa kutuma ujumbe kwa ${to}:`, JSON.stringify(result));
+  } else {
+    console.log(`✅ Ujumbe umetumwa kwa ${to} kwa mafanikio.`);
+  }
 }
 
 // ---------- Endpoint rahisi ya kuangalia oda zote (kwa matumizi yako mwenyewe) ----------
